@@ -17,8 +17,6 @@ public class Task1 {
         System.out.println("Введите число b: ");
         double b = in.nextDouble();
 
-        in.close();
-
         double c = b * a * (a + b) / (a * a);
         System.out.println(c);
     }

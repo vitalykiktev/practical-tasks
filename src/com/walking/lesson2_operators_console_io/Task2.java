@@ -19,8 +19,6 @@ public class Task2 {
         System.out.println("Введите число b: ");
         int b = in.nextInt();
 
-        in.close();
-
         boolean result = a *  a * a > b * b;
         System.out.println(result);
     }
