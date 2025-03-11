@@ -1,5 +1,7 @@
 package com.walking.lesson3_casts_conditional_constructions;
 
+import java.util.Scanner;
+
 /**
  * Написать программу, которая принимает строку с клавиатуры.
  * Если строка == "Hi" - вывести в консоль "Hello",
@@ -10,5 +12,22 @@ package com.walking.lesson3_casts_conditional_constructions;
  */
 public class Task2SwitchCase {
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter your message: ");
+        String message = in.nextLine();
+
+        switch (message) {
+            case "Hi":
+                System.out.println("Hello");
+                break;
+            case "Bye":
+                System.out.println("Good bye");
+                break;
+            case "How are you":
+                System.out.println("How are you doing");
+                break;
+            default:
+                System.out.println("Unknown message");
+        }
     }
 }
