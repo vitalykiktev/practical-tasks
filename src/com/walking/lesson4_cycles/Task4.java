@@ -1,5 +1,7 @@
 package com.walking.lesson4_cycles;
 
+import java.util.Scanner;
+
 /**
  * Ввести с клавиатуры целое число (Число 2).
  * Для каждого из чисел от 1 до 10 выполнить:
@@ -20,5 +22,20 @@ package com.walking.lesson4_cycles;
  */
 public class Task4 {
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter an integer: ");
+        int a = in.nextInt();
+
+        for (int i = 1; i <= 10; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i + a);
+            } else {
+                System.out.println(i - a);
+            }
+
+            if (i == a) {
+                System.out.println("The numbers are equal!");
+            }
+        }
     }
 }
