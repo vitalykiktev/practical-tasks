@@ -7,5 +7,10 @@ package com.walking.lesson5_arrays;
  */
 public class Task1WithoutString {
     public static void main(String[] args) {
+        char[] nameArray = {'J', 'a', 'c', 'k'};
+
+        for (char ch : nameArray) {
+            System.out.print(ch);
+        }
     }
 }
