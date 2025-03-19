@@ -17,14 +17,14 @@ public class Task3 {
         System.out.println("Enter length: ");
         int length = scanner.nextInt();
 
-        if (!isOneOrMore(length)) {
+        if (!isPrime(length)) {
             return;
         }
 
         System.out.println("Enter width: ");
         int width = scanner.nextInt();
 
-        if (!isOneOrMore(width)) {
+        if (!isPrime(width)) {
             return;
         }
 
@@ -63,7 +63,7 @@ public class Task3 {
         return unit + "|\n";
     }
 
-    static boolean isOneOrMore(int value) {
+    static boolean isPrime(int value) {
         return value >= 1;
     }
 }
